@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="menu" class=" sticky top-0 bg-white shadow-lg px-5 py-4 block lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <main class="container mx-0 lgmx-auto lg:px-40 pt-10 mb-60">
+        <div class="grid grid-cols-12">
+            <!-- Left Side  -->
+            <div id="left-side" class="lg:border-r md:col-span-2 py-5 lg:py-0 space-y-5 md:shadow-none md:w-auto md:bg-transparent md:static hidden md:block md:mt-0       shadow-lg w-4/6 bg-white col-span-12 fixed mt-10">
+                <div class="sticky top-10 md:top-20 lg:top-10">
+                    <h6 class="px-2 mb-3">Home</h6>
+                    <div class="space-y-5">
+                        <h6 class="uppercase px-2">Public</h6>
+                        <div class="">
+                            <ul class="space-y-2 lg:space-y-5">
+                                <li class=" bg-slate-200 border-r-4 border-amber-500 px-3 py-2"><i class="fa-solid fa-earth-americas"></i> Question</li>
+                                <li class=" bg-transparent border-r-4 border-transparent px-3 py-2 pl-8">Tags</li>
+                                <li class=" bg-transparent border-r-4 border-transparent px-3 py-2 pl-8">Users</li>
+                                <li class=" bg-transparent border-r-4 border-transparent px-3 py-2 pl-8">Companies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side  -->
+            <div class="h-screen col-span-full md:col-span-10 px-5 md:px-10 space-y-6">
+                <h1 class=" text-3xl">Users</h1> 
+                <a class="px-2 mb-5" href="index.html">Login</a>
+                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center text-xs lg:text-base space-y-3 lg:space-y-0">
+                    <div class="border py-1 px-2 w-60 flex items-center rounded-lg">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class=" w-full py-1 px-2 focus:outline-none" placeholder="Filter by user">
+                    </div>
+                    <div class="flex">
+                        <a href="#" class="text-center border py-2 px-1 md:px-2 rounded-l-lg lg:rounded-l-lg">Reputation</a>
+                        <a href="#" class="text-center border py-2 px-1 md:px-2">New users</a>
+                        <a href="#" class="text-center border py-2 px-1 md:px-2">Votest</a>
+                        <a href="#" class="text-center border py-2 px-1 md:px-2">Editors</a>
+                        <a href="#" class="text-center border py-2 px-1 md:px-2 rounded-r-lg lg:rounded-r-lg">Moderators</a>
+                    </div>
+                </div>
+
+                <div class="lg:text-right text-xs">
+                    <a href="#" class="w-full py-2 px-2 border-b border-orange-500">week</a>
+                    <a href="#" class="w-full py-2 px-2 border-b border-transparent">month</a>
+                    <a href="#" class="w-full py-2 px-2 border-b border-transparent">quarter</a>
+                    <a href="#" class="w-full py-2 px-2 border-b border-transparent">year</a>
+                    <a href="#" class="w-full py-2 px-2 border-b border-transparent">all</a>
+                </div>
+
+                <!-- User List -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="https://i.stack.imgur.com/I4fiW.jpg?s=128&g=1" class="w-12 h-12 mr-3" alt="">
+                        <div class="">
+                            <h4 class=" text-blue-500 text-xl">Name</h4>
+                            <h4 class=" text-xs">Country</h4>
+                            <h4 class=" text-xs">1200</h4>
+                            <h4 class=" text-xs text-blue-500">git, github, eclipse</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="lg:text-right">
+                    <ul class="inline-flex -space-x-px text-xs lg:text-base">
+                        <li>
+                            <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">Previous</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                        </li>
+                        <li>
+                           <a href="#" aria-current="page" class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">Next</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            
+
+            
+        </div>
+    </main>
+
+    <script>
+        const menuClick = document.getElementById('menu')
+        const leftSide = document.getElementById('left-side')
+
+        menuClick.addEventListener('click', () => {
+            leftSide.classList.toggle('hidden')
+        })
+
+    </script>
+    
+</body>
+</html>
